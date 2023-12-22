@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Grid</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 100vw; 
+      width: 100%; 
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+
+    .large-button {
+      width: calc(48% - 20px); 
+      height: 120px; 
+      padding: 30px; 
+      font-size: 28px; 
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid black;
+      color: black;
+      background-color:#d5d8dc;
+      border-radius: 8px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .large-button:hover {
+      background-color: #bfc3c9;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    
+    <div class="row">
+      <a href="#" class="large-button">EYE GAZE</a>
+      <a href="#" class="large-button">HAND GESTURE</a>
+    </div>
+  </div>
+  <script>
+  document.querySelector('.large-button').addEventListener('click', function() {
+    fetch('/runeyscript', {
+      method: 'POST',
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => console.error('Error:', error));
+  });
+
+</script>
+</body>
+</html>
+

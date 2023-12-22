@@ -1,0 +1,200 @@
+.op1 {
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.op1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-color: #ff0000; 
+}
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+  .options2 button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .options2 button:hover {
+    background-color: #495057; 
+  }  
+  .options2 .settings-dropdown .dropdown-menu {
+    
+    background-color: #343a40; 
+  }
+
+  .options2 .dropdown-item {
+    color: white;
+  }
+
+  .options2 .dropdown-item:hover {
+    background-color: #495057; 
+  }
+
+
+.option {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 80%; /* Adjust the height as needed */
+  background-color: lightgray;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #333;
+}
+
+.img1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.img2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.img3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.img4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.img5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.img6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.img7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.img8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+ img {
+  background-color: white;
+  height: 70%; /* Adjust the height as needed */
+  width: 70%; /* Adjust the width as needed */
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+#display {
+  width: 70vw;
+  height: 10vh;
+}
+input[type="text"] {
+  height: 120%;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+main {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+button {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  font-size: larger;
+}
+.op1 {
+  background-color: white;
+  cursor: pointer;
+}
+
+aside {
+  width: 20vw;
+  height: 20vh;
+  margin-top: 10px;
+}
+
+.options2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  grid-template-rows: repeat(2, 45%);
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+}
+
+.div25 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div28 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div29 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div30 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.op2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #6834db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options3 {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 4rem;
+}
+
+.div31 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div32 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div33 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div34 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div35 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div36 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+.div37 {
+  grid-area: 7 / 1 / 8 / 2;
+}
+@media (max-width: 950px) {
+  /* Hide the text when the screen size is 950px or smaller */
+  button #text {
+    display: none;
+  }
+}

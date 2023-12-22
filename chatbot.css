@@ -1,0 +1,154 @@
+.chat-container{
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    padding-top: 50px; 
+}
+
+
+    .user-message,
+    .assistant-message {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+
+    .user-message span,
+    .assistant-message span {
+        padding: 10px;
+        border-radius: 12px;
+        display: inline-block;
+    }
+
+    .user-message span {
+        background-color: #cd59bc;
+        color: #efe3e3;
+    }
+
+    .assistant-message span {
+padding: 10px;
+border-radius: 12px;
+display: inline-block;
+background-color: #c7bdc4;
+color: #000;
+margin-left: 10px; /* Adjust the margin to separate the icon and the message */
+}
+.assistant-message {
+display: flex;
+align-items: flex-end;
+margin-top: 10px;
+text-align: left;
+}
+
+    .chat {
+        overflow-y: scroll;
+        height: 300px;
+        margin-bottom: 20px;
+        scrollbar-width: thin;
+    }
+
+    .chat::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chat::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 5px;
+    }
+
+    .input-container {
+    position: relative;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+    overflow: hidden; 
+}
+
+.input-container {
+    position: relative;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+    overflow: hidden; 
+}
+
+.chatbox {
+    width: calc(100% - 30px);
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    float: left; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Adjust to align buttons to the right */
+    align-items: center;
+    margin-top: 10px;
+    position: relative; /* Use relative positioning */
+}
+
+.button-container button {
+    background-color: #da59ab;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 45%;
+    margin-left: 5px; /* Add margin to separate the buttons */
+    display: flex;
+    align-items: center; /* Align items vertically in the button container */
+    justify-content: center; /* Center the icon and text horizontally */
+}
+
+#voice-icon-button i,
+#submit-button i {
+    font-size: 20px;
+    margin-right: 5px; /* Add margin to separate the icon from text */
+}
+
+#bot-icon,
+#online-indicator {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#voice-icon-button,
+#submit-button {
+    background-color: #051a1a; 
+    display: flex;
+    padding: 25px;
+    height: 10px;
+    border-radius: 15%;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#bot-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+    position: absolute; /* Position the container absolutely within .chat-container */
+    top: 0; /* Position from the top of .chat-container */
+    left: 0; /* Position from the left of .chat-container */
+    right: 0; /* Position from the right of .chat-container */
+    background-color: #cc76b0; /* Set background color for the bot container */
+}
+
+#bot-icon,
+#online-indicator {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+    #online-indicator {
+        color: #28a745; 
+    }

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/static/global.css" />
+  <link rel="stylesheet" href="/static/style1.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <script src="/static/scripthindiindex.js"></script>
+</head>
+<style>
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+.option {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 80%; 
+  background-color: lightgray;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #333;
+}
+
+.img1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.img2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.img3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.img4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.img5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.img6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.img7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.img8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+ img {
+  background-color: white;
+  height: 70%; /* Adjust the height as needed */
+  width: 70%; /* Adjust the width as needed */
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+#display {
+  width: 70vw;
+  height: 10vh;
+}
+input[type="text"] {
+  height: 120%;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+main {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+button {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  font-size: larger;
+}
+.op1 {
+  background-color: white;
+  cursor: pointer;
+}
+
+aside {
+  width: 20vw;
+  height: 20vh;
+  margin-top: 10px;
+}
+
+.options2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  grid-template-rows: repeat(2, 45%);
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+}
+
+.div25 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div28 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div29 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div30 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.op2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #6834db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options3 {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 4rem;
+}
+
+.div31 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div32 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div33 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div34 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div35 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div36 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+.div37 {
+  grid-area: 7 / 1 / 8 / 2;
+}
+@media (max-width: 950px) {
+  /* Hide the text when the screen size is 950px or smaller */
+  button #text {
+    display: none;
+  }
+}
+</style>
+
+<body>
+  <main>
+    <div id="display">
+      <input type="text" id="text" placeholder="Enter your text here" />
+    </div>
+    <div class="option">
+      <img class="op1 img1" src="/static/images/I.png" alt="मैं" onclick="speakTexthindi('मैं')" />
+<img class="op1 img2" src="/static/images/you.png" alt="तुम" onclick="speakTexthindi('तुम')">
+<img class="op1 img3" src="/static/images/yes.png" alt="हाँ" onclick="speakTexthindi('हाँ')">
+<img class="op1 img4" src="/static/images/we.png" alt="हम" onclick="speakTexthindi('हम')">
+<img class="op1 img5" src="/static/images/people.png" alt="लोग" onclick="speakTexthindi('लोग')">
+<img class="op1 img6" src="/static/images/clothes.png" alt="कपड़े" onclick="redirectTohindiclothes()">
+<img class="op1 img7" src="/static/images/food.png" alt="खाना" onclick="redirectTohindifood()">
+<img class="op1 img8" src="/static/images/drink.png" alt="पीना" onclick="speakTexthindi('पीना')">
+<img class="op1 img9" src="/static/images/description.png" alt="वस्त्र" onclick="speakTexthindi('वस्त्र')">
+<img class="op1 img10" src="/static/images/animal.png" alt="पशु" onclick="speakTexthindi('पशु')">
+<img class="op1 img11" src="/static/images/bad.png" alt="बुरा" onclick="speakTexthindi('बुरा')">
+<img class="op1 img12" src="/static/images/bath.png" alt="स्नान" onclick="speakTexthindi('स्नान')">
+<img class="op1 img13" src="/static/images/board games.png" alt="फुर्सत" onclick="speakTexthindi('फुर्सत')">
+<img class="op1 img14" src="/static/images/come.png" alt="आना" onclick="speakTexthindi('आना')">
+<img class="op1 img15" src="/static/images/feelings.png" alt="भावनाएं" onclick="speakTexthindi('भावनाएं')">
+<img class="op1 img16" src="/static/images/festivities.png" alt="त्योहार" onclick="speakTexthindi('त्योहार')">
+<img class="op1 img17" src="/static/images/first.png" alt="अवधारणाएं" onclick="speakTexthindi('अवधारणाएं')">
+<img class="op1 img18" src="/static/images/school.png" alt="स्कूल" onclick="speakTexthindi('मुझे यह पसंद नहीं है')">
+<img class="op1 img19" src="/static/images/help.png" alt="मदद" onclick="speakTexthindi('मदद')">
+<img class="op1 img20" src="/static/images/half past ten.png" alt="समय" onclick="speakTexthindi('समय')">
+<img class="op1 img21" src="/static/images/home.png" alt="घर" onclick="speakTexthindi('घर')">
+<img class="op1 img22" src="/static/images/animal.png" alt="पशु" onclick="speakTexthindi('पशु')">
+<img class="op1 img23" src="/static/images/give a present.png" alt="मुझे दो" onclick="speakTexthindi('मुझे दो')">
+<img class="op1 img24" src="/static/images/talk at once.png" alt="बातचीत" onclick="speakTexthindi('बातचीत')">
+<img class="op1 img25" src="/static/images/body.png" alt="शरीर" onclick="redirectTohindibody('शरीर')">
+<img class="op1 img26" src="/static/images/colors.png" alt="रंग" onclick="speakTexthindi('रंग')">
+<img class="op1 img27" src="/static/images/keep the comb.png" alt="स्वच्छता" onclick=" redirecttohindihygiene()">
+<img class="op1 img28" src="/static/images/I do not like that (1).png" alt="मुझे यह पसंद नहीं है" onclick="speakTexthindi('मुझे यह पसंद नहीं है')">
+<img class="op1 img29" src="/static/images/like.png" alt="मुझे यह पसंद है" onclick="speakTexthindi('मुझे यह पसंद है')">
+<img class="op1 img30" src="/static/images/no.png" alt="नहीं" onclick="speakTexthindi('नहीं')">
+<img class="op1 img31" src="/static/images/rest.png" alt="आराम" onclick="speakTexthindi('आराम')">
+<img class="op1 img32" src="/static/images/dry.png" alt="साफ" onclick="speakTexthindi('साफ')">
+<img class="op1 img33" src="/static/images/who.png" alt="कौन" onclick="speakTexthindi('कौन')">
+<img class="op1 img34" src="/static/images/ludo.png" alt="लूडो" onclick="speakTexthindi('लूडो')">
+<img class="op1 img35" src="/static/images/mobile device.png" alt="उपकरण" onclick="speakTexthindi('उपकरण')">
+<img class="op1 img36" src="/static/images/money.png" alt="पैसा" onclick="speakTexthindi('पैसा')">
+<img class="op1 img37" src="/static/images/places.png" alt="स्थान" onclick="speakTexthindi('स्थान')">
+<img class="op1 img38" src="/static/images/number.png" alt="संख्या" onclick="speakTexthindi('संख्या')">
+<img class="op1 img39" src="/static/images/plant.png" alt="पौधा" onclick="speakTexthindi('पौधा')">
+<img class="op1 img40" src="/static/images/shapes.png" alt="आकृतियाँ" onclick="speakTexthindi('आकृतियाँ')">
+<img class="op1 img41" src="/static/images/radio.png" alt="रेडियो" onclick="speakTexthindi('रेडियो')">
+<img class="op1 img42" src="/static/images/sports.png" alt="खेल" onclick="redirectTohindisports()">
+<img class="op1 img43" src="/static/images/stop.png" alt="रुको" onclick="speakTexthindi('रुको')">
+<img class="op1 img44" src="/static/images/toys.png" alt="खिलौने" onclick="speakTexthindi('खिलौने')">
+<img class="op1 img45" src="/static/images/verbs.png" alt="क्रियाएँ" onclick="speakTexthindi('क्रियाएँ')">
+<img class="op1 img46" src="/static/images/weather.png" alt="मौसम" onclick="speakTexthindi('मौसम')">
+<img class="op1 img47" src="/static/images/keyboard.png" alt="कीबोर्ड" onclick="speakTexthindi('कीबोर्ड')">
+<img class="op1 img48" src="/static/images/ABC.png" alt="शब्द" onclick="speakTexthindi('शब्द')">
+<img class="op1 img49" src="/static/images/youtube.png" alt="यूट्यूब" onclick="speakTexthindi('यूट्यूब')">
+<img class="op1 img50" src="/static/images/+.png" alt="">
+
+    </div>
+  </main>
+  <aside>
+    <div class="options2">
+      <button class="op2 div25" onclick="redirectTohindi()">
+        <span class="material-symbols-outlined">
+            home
+        </span>होम
+    </button>
+      <button class="op2 div28">
+          <span class="material-symbols-outlined">
+              settings
+          </span>सेटिंग्स
+      </button>
+      <button class="op2 div29" onclick="clearText()">
+          <span class="material-symbols-outlined">
+              delete
+          </span>हटाएं
+      </button>
+      <button class="op2 div30" onclick="goBack()">
+          <span class="material-symbols-outlined">
+              undo
+          </span>बैक
+      </button>
+  </div>
+  </aside>
+  </div>
+</body>
+
+</html>

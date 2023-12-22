@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image to Speech</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/global1.css" />
+  <link rel="stylesheet" href="/static/style1.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/script1.js"></script>
+</head>
+<body>
+  <main>
+    <div id="display">
+      <input type="text" id="text" placeholder="Enter your text here" />
+    </div>
+    <div class="option">
+      <img class="op1 img1" src="/static/images/I.png" alt="I" onclick="speakText('I')" />
+      <img class="op1 img2" src="/static/images/you.png" alt="YOU" onclick="speakText('YOU')" />
+      <img class="op1 img3" src="/static/images/yes.png" alt="YES" onclick="speakText('YES')" />
+      <img class="op1 img4" src="/static/images/we.png" alt="WE" onclick="speakText('WE')" />
+      <img class="op1 img5" src="/static/images/people.png" alt="PEOPLES" onclick="speakText('PEOPLES')" />
+      <img class="op1 img6" src="/static/images/clothes.png" alt="CLOTHES" onclick="redirectToclothesPage()" />
+      <img class="op1 img7" src="/static/images/food.png" alt="FOOD" onclick="redirectTodishespage()" />
+      <img class="op1 img8" src="/static/images/drink.png" alt="DRINK" onclick="speakText('DRINK')" />
+      <img class="op1 img9" src="/static/images/description.png" alt="OBJECTS" onclick="speakText('OBJECTS')" />
+      <img class="op1 img10" src="/static/images/animal.png" alt="ANIMAL" onclick="speakText('ANIMAL')" />
+      <img class="op1 img11" src="/static/images/bad.png" alt="BAD" onclick="speakText('BAD')" />
+      <img class="op1 img12" src="/static/images/bath.png" alt="BATH" onclick="speakText('BATH')" />
+      <img class="op1 img13" src="/static/images/board games.png" alt="LEISURE" onclick="speakText('LEISURE')" />
+      <img class="op1 img14" src="/static/images/come.png" alt="COME" onclick="speakText('COME')" />
+      <img class="op1 img15" src="/static/images/feelings.png" alt="FEELING" onclick="speakText('FEELING')" />
+      <img class="op1 img16" src="/static/images/festivities.png" alt="EVENTS" onclick="speakText('EVENTS')" />
+      <img class="op1 img17" src="/static/images/first.png" alt="CONCEPTS" onclick="speakText('CONCEPTS')" />
+      <img class="op1 img18" src="/static/images/school.png" alt="SCHOOL" onclick="speakText('SCHOOL')" />
+      <img class="op1 img19" src="/static/images/help.png" alt="HELP" onclick="speakText('HELP')" />
+      <img class="op1 img20" src="/static/images/half past ten.png" alt="TIME" onclick="speakText('TIME')" />
+      <img class="op1 img21" src="/static/images/home.png" alt="HOME" onclick="speakText('HOME')" />
+      <img class="op1 img22" src="/static/images/animal.png" alt="ANIMAL" onclick="speakText('ANIMAL')" />
+      <img class="op1 img23" src="/static/images/give a present.png" alt="GIVE ME" onclick="speakText('GIVE ME')" />
+      <img class="op1 img24" src="/static/images/talk at once.png" alt="TALK" onclick="speakText('TALK')" />
+      <img class="op1 img25" src="/static/images/body.png" alt="BODY" onclick="redirectTobodyPage()" />
+      <img class="op1 img26" src="/static/images/colors.png" alt="COLORS" onclick="speakText('COLORS')" />
+      <img class="op1 img27" src="/static/images/keep the comb.png" alt="HYGIENE" onclick="redirectTohygienePage()" />
+      <img class="op1 img28" src="/static/images/I do not like that (1).png" alt="I DON'T LIKE IT" onclick="speakText('I DON\'T LIKE IT')" />
+      <img class="op1 img29" src="/static/images/like.png" alt="I LIKE IT" onclick="speakText('I LIKE IT')" />
+      <img class="op1 img30" src="/static/images/no.png" alt="NO" onclick="speakText('NO')" />
+      <img class="op1 img31" src="/static/images/rest.png" alt="REST" onclick="speakText('REST')" />
+      <img class="op1 img32" src="/static/images/dry.png" alt="CLEAN" onclick="speakText('CLEAN')" />
+      <img class="op1 img33" src="/static/images/who.png" alt="WHO" onclick="speakText('WHO')" />
+      <img class="op1 img34" src="/static/images/ludo.png" alt="LUDO" onclick="speakText('LUDO')" />
+      <img class="op1 img35" src="/static/images/mobile device.png" alt="APPLIANCES" onclick="speakText('APPLIANCES')" />
+      <img class="op1 img36" src="/static/images/money.png" alt="MONEY" onclick="speakText('MONEY')" />
+      <img class="op1 img37" src="/static/images/places.png" alt="PLACES" onclick="speakText('PLACES')" />
+      <img class="op1 img38" src="/static/images/number.png" alt="NUMBER" onclick="speakText('NUMBER')" />
+      <img class="op1 img39" src="/static/images/plant.png" alt="PLANT" onclick="speakText('PLANT')" />
+      <img class="op1 img40" src="/static/images/shapes.png" alt="SHAPES" onclick="speakText('SHAPES')" />
+      <img class="op1 img41" src="/static/images/radio.png" alt="RADIO" onclick="speakText('RADIO')" />
+      <img class="op1 img42" src="/static/images/sports.png" alt="SPORTS" onclick="redirectTosportsPage()" />
+      <img class="op1 img43" src="/static/images/stop.png" alt="STOP" onclick="speakText('STOP')" />
+      <img class="op1 img44" src="/static/images/toys.png" alt="TOYS" onclick="speakText('TOYS')" />
+      <img class="op1 img45" src="/static/images/verbs.png" alt="VERBS" onclick="speakText('VERBS')" />
+      <img class="op1 img46" src="/static/images/weather.png" alt="WEATHER" onclick="speakText('WEATHER')" />
+      <img class="op1 img47" src="/static/images/keyboard.png" alt="KEYBOARD" onclick="speakText('KEYBOARD')" />
+      <img class="op1 img48" src="/static/images/ABC.png" alt="WORDS" onclick="speakText('WORDS')" />
+      <img class="op1 img49" src="/static/images/youtube.png" alt="YOUTUBE" onclick="speakText('YOUTUBE')" />
+      <img class="op1 img50" src="/static/images/+.png" alt="" onclick="speakText('PLUS')" />
+    </div>
+  </main>
+  <aside>
+    <div class="options2">
+      <button class="op2 div25" onclick="goBack()">
+        <span class="material-symbols-outlined"></span>Home
+      </button>
+      <div class="settings-dropdown">
+        <button class="btn btn-dark dropdown-toggle" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Settings
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="settingsDropdown">
+          <li><a class="dropdown-item" href="#" onclick="changeFont('sans-serif')">Sans-serif Font</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeFont('serif')">Serif Font</a></li>
+          <li><a class="dropdown-item" href="#" onclick="adjustBrightness(0.8)">Reduce Brightness</a></li>
+          <li><a class="dropdown-item" href="#" onclick="adjustBrightness(1.2)">Increase Brightness</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeFontSize('small')">Small Font</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeFontSize('medium')">Medium Font</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeFontSize('large')">Large Font</a></li>
+        </ul>
+      </div>
+        <button class="op2 div29" onclick="clearText()"><span class="material-symbols-outlined">
+          delete
+          </span>
+          Delete</button>
+          <button class="op2 div30" onclick="speakTextFromTextBox()"><span class="material-symbols-outlined">
+            volume_up
+          </span>volume</button>
+      </div>
+    </div>
+  </aside>
+</body>
+
+</html>

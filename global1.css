@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  line-height: normal;
+  display: flex;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-23xl: 42px;
+  --font-size-20xl: 39px;
+  --font-size-14xl: 33px;
+  --font-size-15xl: 34px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gainsboro: #d9d9d9;
+}

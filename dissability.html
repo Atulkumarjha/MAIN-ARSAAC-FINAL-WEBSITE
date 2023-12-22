@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Large Buttons</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .large-button1 {
+      display: inline-block;
+      padding: 10vh 20vw;
+      font-size: 4vh; 
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid black;
+      color: black;
+      background-color: #98FB98;
+      border-radius: 8px;
+      margin: 5vh;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .large-button2{
+      display: inline-block;
+      padding: 10vh 20vw; /* 10% of the viewport height for padding, 20% of the viewport width for padding */
+      font-size: 4vh; /* 4% of the viewport height for font size */
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid black;
+      color: black;
+      background-color: skyblue;
+      border-radius: 8px;
+      margin: 5vh;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .large-button3{
+      display: inline-block;
+      padding: 10vh 20vw; /* 10% of the viewport height for padding, 20% of the viewport width for padding */
+      font-size: 4vh; /* 4% of the viewport height for font size */
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid black;
+      color: black;
+      background-color: #C0C0C0;
+      border-radius: 8px;
+      margin: 5vh;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .large-button1:hover {
+      background-color: grey;
+      color: #fff;
+     
+    }
+    .large-button2:hover {
+      background-color: grey;
+      color: #fff;
+      }
+    .large-button3:hover {
+      background-color: gray;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <a href="#" class="large-button1">Deaf&Dumb</a>
+    <a href="#" class="large-button2" onclick="gotopage('paralytic.html')">Paralytic</a>
+    <a href="#" class="large-button3">Blind</a>
+  </div>
+<script>
+     function gotopage(pageUrl) {
+    window.location.href = pageUrl;
+  }
+</script>
+</body>
+</html>
